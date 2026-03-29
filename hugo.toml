@@ -1,3 +1,20 @@
-baseURL = 'https://example.org/'
-locale = 'en-us'
-title = 'Slobotic'
+baseURL = "https://slobotic.com/"
+languageCode = "en-us"
+title = "Slobotic"
+theme = "accessible-minimalism"
+disableHugoGeneratorInject = true
+enableRobotsTXT = true
+
+[markup.goldmark]
+[markup.goldmark.renderer]
+unsafe = true
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "Posts"
+    url = "/posts/"
+    weight = 2
